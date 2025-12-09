@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Події — Evently</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <div class="header-top">
+      <div class="logo-wrap">
+        <img src="images/logo.png" alt="Логотип Evently">
+        <div class="logo-text">Evently</div>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-btn">Змінити тему</button>
+        <button id="login-btn">Увійти</button>
+      </div>
+    </div>
+
+    <div class="burger"
+         onclick="this.classList.toggle('active'); document.querySelector('nav').classList.toggle('active');">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="events.html" class="active">Події</a></li>
+        <li><a href="my-events.html">Мої події</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Афіша подій</h1>
+
+    <section class="cards" id="events-list">
+      <article class="card" data-event-id="4">
+        <h3 class="event-name">Майстер-клас з живопису</h3>
+        <p class="event-meta">10.11.2025 · Київ</p>
+        <button class="btn-outline details-btn">Деталі</button>
+        <button class="btn-outline add-to-my-btn">+ Додати</button>
+        <div class="event-details" style="display:none; margin-top:8px;">
+          Практичний майстер-клас з живопису для новачків.
+        </div>
+      </article>
+
+      <article class="card" data-event-id="5">
+        <h3 class="event-name">Front-end курс</h3>
+        <p class="event-meta">15.11.2025 · Онлайн</p>
+        <button class="btn-outline details-btn">Деталі</button>
+        <button class="btn-outline add-to-my-btn">+ Додати</button>
+        <div class="event-details" style="display:none; margin-top:8px;">
+          Інтенсивний курс з основ фронтенд-розробки.
+        </div>
+      </article>
+
+      <article class="card" data-event-id="6">
+        <h3 class="event-name">Ранкова йога</h3>
+        <p class="event-meta">20.11.2025 · Львів</p>
+        <button class="btn-outline details-btn">Деталі</button>
+        <button class="btn-outline add-to-my-btn">+ Додати</button>
+        <div class="event-details" style="display:none; margin-top:8px;">
+          Тренування для гарного самопочуття та енергії.
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">🏠<span>Дім</span></a>
+      <a href="events.html">📅<span>Події</span></a>
+      <a href="my-events.html">⭐<span>Мої</span></a>
+      <a href="contacts.html">✉️<span>Контакти</span></a>
+    </div>
+  </footer>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

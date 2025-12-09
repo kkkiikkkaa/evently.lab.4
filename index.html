@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evently — Афіша подій</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <div class="header-top">
+      <div class="logo-wrap">
+        <img src="images/logo.png" alt="Логотип Evently">
+        <div class="logo-text">Evently</div>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-btn">Змінити тему</button>
+        <button id="login-btn">Увійти</button>
+      </div>
+    </div>
+
+    <!-- БУРГЕР МЕНЮ -->
+    <div class="burger"
+         onclick="this.classList.toggle('active'); document.querySelector('nav').classList.toggle('active');">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Головна</a></li>
+        <li><a href="events.html">Події</a></li>
+        <li><a href="my-events.html">Мої події</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Знайдіть та сплануйте події</h1>
+        <p>Відкрийте для себе концерти, курси та зустрічі, що відбуваються поруч.</p>
+
+        <!-- АКОРДЕОН -->
+        <button id="show-more-btn" class="btn-outline" style="margin-top:10px;">
+          Показати більше
+        </button>
+
+        <p id="hidden-text" style="display:none; margin-top:10px;">
+          Evently дозволяє зберігати події, отримувати нагадування,
+          переглядати афішу та планувати свій час.
+        </p>
+      </div>
+
+      <div class="hero-note" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="section-title">Рекомендовані події</h2>
+
+    <section class="events-list">
+      <article class="event-item" data-event-id="1">
+        <div class="event-name">Живий концерт</div>
+        <div class="event-meta">25.10.2025 · 19:00 · Київ</div>
+        <div class="event-actions">
+          <span class="tag">Концерт</span>
+          <button class="btn-outline details-btn">Деталі</button>
+          <button class="btn-outline add-to-my-btn">+ Додати</button>
+        </div>
+        <div class="event-details" style="display:none; margin-top:8px;">
+          Атмосферний виступ у центрі Києва. Кількість місць обмежена.
+        </div>
+      </article>
+
+      <article class="event-item" data-event-id="2">
+        <div class="event-name">UI/UX семінар</div>
+        <div class="event-meta">26.10.2025 · 18:00 · Онлайн</div>
+        <div class="event-actions">
+          <span class="tag">Курс</span>
+          <button class="btn-outline details-btn">Деталі</button>
+          <button class="btn-outline add-to-my-btn">+ Додати</button>
+        </div>
+        <div class="event-details" style="display:none; margin-top:8px;">
+          Онлайн-семінар для початківців у дизайні інтерфейсів.
+        </div>
+      </article>
+
+      <article class="event-item" data-event-id="3">
+        <div class="event-name">Стендап вечір</div>
+        <div class="event-meta">30.10.2025 · 20:00 · Львів</div>
+        <div class="event-actions">
+          <span class="tag">Стендап</span>
+          <button class="btn-outline details-btn">Деталі</button>
+          <button class="btn-outline add-to-my-btn">+ Додати</button>
+        </div>
+        <div class="event-details" style="display:none; margin-top:8px;">
+          Вечір гумору з молодими стендап-коміками.
+        </div>
+      </article>
+    </section>
+
+    <section class="plan-block">
+      <h2 class="section-title">Сплануйте свої події</h2>
+      <p>Натисніть кнопку нижче, щоб підписатися на email-оновлення (імітація).</p>
+      <button class="btn-primary" id="start-btn">Почати</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">🏠<span>Дім</span></a>
+      <a href="events.html">📅<span>Події</span></a>
+      <a href="my-events.html">⭐<span>Мої</span></a>
+      <a href="contacts.html">✉️<span>Контакти</span></a>
+    </div>
+  </footer>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

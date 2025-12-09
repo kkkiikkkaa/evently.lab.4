@@ -1,0 +1,59 @@
+/* БАЗОВИЙ RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* КОЛЬОРИ БРЕНДБУКУ */
+:root {
+  --primary: #6a1b9a;
+  --accent: #26c6da;
+  --bg: #f3e9ff;
+  --text: #2c2c2c;
+  --light: #ffffff;
+  --muted: #666666;
+}
+
+/* БАЗОВІ НАЛАШТУВАННЯ ТЕКСТУ ТА ФОНУ */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ЗОБРАЖЕННЯ */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ТЕКСТОВІ ЕЛЕМЕНТИ */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+/* СПИСКИ */
+ul {
+  list-style: none;
+}
+
+/* ПОСИЛАННЯ */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* КНОПКИ */
+button {
+  font-family: inherit;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мої події — Evently</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <div class="header-top">
+      <div class="logo-wrap">
+        <img src="images/logo.png" alt="Логотип Evently">
+        <div class="logo-text">Evently</div>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-btn">Змінити тему</button>
+        <button id="login-btn">Увійти</button>
+      </div>
+    </div>
+
+    <div class="burger"
+         onclick="this.classList.toggle('active'); document.querySelector('nav').classList.toggle('active');">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="events.html">Події</a></li>
+        <li><a href="my-events.html" class="active">Мої події</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Мій список подій</h1>
+
+    <section class="cards" id="my-events-list">
+      <!-- Сюди JS підставить події з localStorage -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">🏠<span>Дім</span></a>
+      <a href="events.html">📅<span>Події</span></a>
+      <a href="my-events.html">⭐<span>Мої</span></a>
+      <a href="contacts.html">✉️<span>Контакти</span></a>
+    </div>
+  </footer>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
